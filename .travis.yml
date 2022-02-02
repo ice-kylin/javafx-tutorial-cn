@@ -10,7 +10,7 @@ deploy:
   skip_cleanup: true
   local_dir: docs/.vuepress/dist
   github_token: $GITHUB_TOKEN
-  keep_history: true
+  keep_history: false
   fqdn: javafx.icekylin.online
   on:
     branch: main

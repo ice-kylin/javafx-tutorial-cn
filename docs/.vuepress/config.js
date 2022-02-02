@@ -35,13 +35,13 @@ module.exports = {
     //     href: "/favicon-16x16.png",
     //   },
     // ],
-    // [
-    //   "meta",
-    //   {
-    //     name: "keywords",
-    //     href: "archlinux 安装,archlinux 教程,archlinux 指南,archlinux,Arch Linux,Linux",
-    //   },
-    // ],
+    [
+      "meta",
+      {
+        name: "keywords",
+        href: "JavaFX 教程,JavaFX,Java",
+      },
+    ],
     [
       "meta",
       {
@@ -51,22 +51,24 @@ module.exports = {
     ],
     ["meta", { "http-equiv": "X-UA-Compatible", content: "IE=edge,chrome=1" }],
     ["meta", { property: "og:type", content: "website" }],
-    ["meta", { property: "og:url", content: "https://javafx.icekylin.online/" }],
-    // [
-    //   "meta",
-    //   {
-    //     property: "og:title",
-    //     content: "archlinux 简明指南 — Arch Linux 安装使用教程",
-    //   },
-    // ],
-    // [
-    //   "meta",
-    //   {
-    //     property: "og:description",
-    //     content:
-    //       "本指南包含从 archlinux 安装、显卡驱动、日常软件配置，到多媒体制作、编程等你可能需要的全部内容。让 archlinux 成为你的常用系统吧！",
-    //   },
-    // ],
+    [
+      "meta",
+      { property: "og:url", content: "https://javafx.icekylin.online/" },
+    ],
+    [
+      "meta",
+      {
+        property: "og:title",
+        content: "JavaFX 教程中文翻译",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content: "用 JavaFX 做出现代、美观的 UI",
+      },
+    ],
     // [
     //   "meta",
     //   {
@@ -74,26 +76,25 @@ module.exports = {
     //     content: "https://javafx.icekylin.online/image-400x400.png",
     //   },
     // ],
-    // ["meta", { property: "twitter:card", content: "summary_large_image" }],
-    // [
-    //   "meta",
-    //   { property: "twitter:url", content: "https://javafx.icekylin.online/" },
-    // ],
-    // [
-    //   "meta",
-    //   {
-    //     property: "twitter:title",
-    //     content: "archlinux 简明指南 — Arch Linux 安装使用教程",
-    //   },
-    // ],
-    // [
-    //   "meta",
-    //   {
-    //     property: "twitter:description",
-    //     content:
-    //       "本指南包含从 archlinux 安装、显卡驱动、日常软件配置，到多媒体制作、编程等你可能需要的全部内容。让 archlinux 成为你的常用系统吧！",
-    //   },
-    // ],
+    ["meta", { property: "twitter:card", content: "summary_large_image" }],
+    [
+      "meta",
+      { property: "twitter:url", content: "https://javafx.icekylin.online/" },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:title",
+        content: "JavaFX 教程中文翻译",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "twitter:description",
+        content: "用 JavaFX 做出现代、美观的 UI",
+      },
+    ],
     // [
     //   "meta",
     //   {
@@ -126,17 +127,17 @@ module.exports = {
       "link",
       { rel: "stylesheet", type: "text/css", href: "/static/css/font.css" },
     ],
-    //     [
-    //       "script",
-    //       {},
-    //       `var _hmt = _hmt || [];
-    // (function () {
-    //   var hm = document.createElement("script");
-    //   hm.src = "https://hm.baidu.com/hm.js?e7059486ad3b16e21ea7058836c51b9b";
-    //   var s = document.getElementsByTagName("script")[0];
-    //   s.parentNode.insertBefore(hm, s);
-    // })();`,
-    //     ],
+    [
+      "script",
+      {},
+      `var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6d6f02112eb2e95f0df941ab13e7e24d";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();`,
+    ],
     //     [
     //       "script",
     //       {},
@@ -183,14 +184,60 @@ module.exports = {
     // },
   },
   themeConfig: {
-    logo: "/static/svg/arch-logo.svg",
+    logo: "/static/svg/java-logo.svg",
     displayAllHeaders: true,
     sidebar: [
-      "/javafx-tutorial.md",
-      "/javafx-overview.md",
-      "your-first-javafx-application.md",
+      {
+        text: "🧭 千里之行",
+        children: [
+          "/prepare/tutorial.md",
+          "/prepare/overview.md",
+          "/prepare/your-first-javafx-application.md",
+        ],
+      },
+      {
+        text: "☕ JavaFX 核心",
+        children: [
+          "/core/stage.md",
+          "/core/scene.md",
+          "/core/node.md",
+          "/core/properties.md",
+          "/core/fxml.md",
+          "/core/css-styling.md",
+        ],
+      },
+      {
+        text: "⚒️ 基础控件",
+        children: [
+          "/basic-control/imageview.md",
+          "/basic-control/text.md",
+          "/basic-control/label.md",
+          "/basic-control/hyperlink.md",
+          "/basic-control/button.md",
+        ],
+      },
+      {
+        text: "🏗️ 布局组件",
+        children: ["/layout/gridpane.md"],
+      },
+      {
+        text: "🪄 容器控件",
+        children: [],
+      },
+      {
+        text: "🌏 Web",
+        children: [],
+      },
+      {
+        text: "🖼️ 图表",
+        children: [],
+      },
+      {
+        text: "🎯 其它概念",
+        children: ["/other-concept/fonts.md"],
+      },
     ],
-    sidebarDepth: 1,
+    sidebarDepth: 2,
     smoothScroll: true,
     activeHeaderLinks: false,
     lastUpdatedText: "📑 最后更新",

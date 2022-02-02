@@ -16,7 +16,7 @@
 ```bash
 sudo pacman -S nodejs yarn # 安装 nodejs 和 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```
@@ -26,7 +26,7 @@ yarn docs:dev
 ```bash
 brew install yarn # 安装 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```
@@ -37,7 +37,7 @@ yarn docs:dev
 scoop install nodejs # 安装 nodejs
 scoop install yarn # 安装 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```

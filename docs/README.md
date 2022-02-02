@@ -1,11 +1,11 @@
 ---
 home: true
-heroImage: "/static/svg/arch.svg"
+heroImage: "/static/svg/java.svg"
 heroText: JavaFX 教程中文翻译
 tagline: 📖 用 JavaFX 做出现代、美观的 UI ✨
 actions:
-  - text: 🐱‍🏍 开始阅读
-    link: "/javafx-tutorial.html"
+  - text: 💎 开始阅读
+    link: "/prepare/tutorial.md"
     type: primary
   - text: 🍺 Github
     link: "https://github.com/ice-kylin/javafx-tutorial-cn"
@@ -33,7 +33,7 @@ footerHtml: true
 ```bash{4-5}
 sudo pacman -S nodejs yarn # 安装 nodejs 和 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```
@@ -44,7 +44,7 @@ yarn docs:dev
 ```zsh{4-5}
 brew install yarn # 安装 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```
@@ -56,7 +56,7 @@ yarn docs:dev
 scoop install nodejs # 安装 nodejs
 scoop install yarn # 安装 yarn
 git clone https://github.com/ice-kylin/javafx-tutorial-cn.git
-cd ./arch-guide
+cd ./javafx-tutorial-cn
 yarn install
 yarn docs:dev
 ```

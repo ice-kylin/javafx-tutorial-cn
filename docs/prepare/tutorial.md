@@ -1,4 +1,10 @@
-# JavaFX 教程
+# JavaFX 前言
+
+::: details 目录
+
+[[toc]]
+
+:::
 
 JavaFX 是 Java 的 GUI 工具包（GUI 是图形用户界面的缩写）。 JavaFX 使使用 Java 创建桌面应用程序和游戏变得更加容易。 本 JavaFX 教程是解释 JavaFX 核心功能的多页教程。 请参阅此页面左侧的菜单以查看本 JavaFX 教程中涵盖的所有主题。 此页面下方还有一个额外的资源清单。
 

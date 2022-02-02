@@ -1,33 +1,24 @@
-# JavaFX 概览
+# JavaFX 概述
 
-要从使用 JavaFX 开发中充分受益，了解 JavaFX 的设计方式以及对 JavaFX 包含的功能有一个很好的概述是很有用的。 本文的目的是为您提供 JavaFX 概述。 本文将首先介绍一般的 JavaFX 设计，然后再介绍 JavaFX 中的各种特性。
+::: details 目录
+
+[[toc]]
+
+:::
+
+要从使用 JavaFX 开发中充分受益，了解 JavaFX 的设计方式以及对 JavaFX 包含的功能有一个很好的概述是很有用的。 本文的目的是为您提供 JavaFX 概述。本文将首先介绍一般的 JavaFX 设计，然后再介绍 JavaFX 中的各种特性。
 
 To fully benefit from JavaFX it is useful to understand how JavaFX is designed, and to have a good overview of what features JavaFX contains. The purpose of this text is to give you that JavaFX overview. This text will first look at the general JavaFX design, then look at the various features in JavaFX.
 
-如果您熟悉 Flash / Flex，您会发现 JavaFX 在某种程度上受到了 Flash / Flex 的启发。 JavaFX 中也有一些相同的想法。
+如果您熟悉 Flash / Flex，您会发现 JavaFX 在某种程度上受到了 Flash / Flex 的启发。JavaFX 中也有一些相同的想法。
 
 If you are familiar with Flash / Flex, you will see that JavaFX is somewhat inspired by Flash / Flex. Some of the same ideas are found in JavaFX.
 
-一般来说，JavaFX 应用程序包含一个或多个对应于窗口的舞台（stage）。 每个舞台都有一个场景（scene）。每个场景都可以有一个包含控件（control）、布局（layout）等等节点（node）的对象图，称为场景图（scene graph）。这些概念都将在后面更详细地解释。下面是 JavaFX 应用程序的一般结构的图示：
+一般来说，JavaFX 应用程序包含一个或多个对应于窗口的舞台（stage）。每个舞台都有一个场景（scene）。每个场景都可以有一个包含控件（control）、布局（layout）等等节点（node）的对象图，称为场景图（scene graph）。这些概念都将在后面更详细地解释。下面是 JavaFX 应用程序的一般结构的图示：
 
 In general, a JavaFX application contains one or more stages which corresponds to windows. Each stage has a scene attached to it. Each scene can have an object graph of controls, layouts etc. attached to it, called the scene graph. These concepts are all explained in more detail later. Here is an illustration of the general structure of a JavaFX application:
 
-```mermaid
-graph TD
-A1[舞台 Stage] --- B1[场景 Scene]
-  B1 --- C1(节点)
-    C1 --- D1(节点)
-      D1 --- F1(...)
-    C1 --- E1(节点)
-      E1 --- G1(...)
-A2[舞台 Stage] --- B2[场景 Scene]
-  B2 --- C2(节点)
-    C2 --- D2(节点)
-        D2 --- F2(...)
-    C2 --- E2(节点)
-        E2 --- G2(...)
-A3(...)
-```
+![](../static/prepare/overview/overview-1.png)
 
 ## 舞台（Stage）
 
@@ -57,29 +48,29 @@ To display anything on a stage in a JavaFX application, you need a _scene_. A st
 
 You might wonder why a JavaFX application would ever have more than one scene per stage. Imagine a computer game. A game might have multiple "screens" to show to the user. For instance, an initial menu screen, the main game screen (where the game is played), a game over screen and a high score screen. Each of these screens can be represented by a different scene. When the game needs to change from one screen to the next, it simply attaches the corresponding scene to the `Stage` object of the JavaFX application.
 
-场景由 JavaFX 应用程序中的 `Scene` 对象表示。 JavaFX 应用程序必须创建它需要的所有 `Scene` 对象。
+场景由 JavaFX 应用程序中的 `Scene` 对象表示。JavaFX 应用程序必须创建它需要的所有 `Scene` 对象。
 
 A scene is represented by a `Scene` object inside a JavaFX application. A JavaFX application must create all `Scene` objects it needs.
 
 ### 场景图（Scene Graph）
 
-所有视觉组件（控件、布局等）都必须附加到要显示的场景，并且该场景必须附加到舞台才能使整个场景可见。 附加到场景的所有控件、布局等的总对象图称为场景图。
+所有视觉组件（控件、布局等）都必须附加到要显示的场景，并且该场景必须附加到舞台才能使整个场景可见。附加到场景的所有控件、布局等的总对象图称为场景图。
 
 All visual components (controls, layouts etc.) must be attached to a scene to be displayed, and that scene must be attached to a stage for the whole scene to be visible. The total object graph of all the controls, layouts etc. attached to a scene is called the _scene graph_.
 
 ### 节点（Nodes）
 
-附加到场景图的所有组件都称为节点。 所有节点都是名为 `javafx.scene.Node` 的 JavaFX 类的子类。
+附加到场景图的所有组件都称为节点。所有节点都是名为 `javafx.scene.Node` 的 JavaFX 类的子类。
 
 All components attached to the scene graph are called _nodes_. All nodes are subclasses of a JavaFX class called `javafx.scene.Node` .
 
-有两种类型的节点：分支节点和叶节点。 分支节点是可以包含其他节点（子节点）的节点。 分支节点也称为父节点，因为它们可以包含子节点。 叶节点是不能包含其他节点的节点。
+有两种类型的节点：分支节点和叶节点。分支节点是可以包含其他节点（子节点）的节点。分支节点也称为父节点，因为它们可以包含子节点。叶节点是不能包含其他节点的节点。
 
 There are two types of nodes: Branch nodes and leaf nodes. A branch node is a node that can contain other nodes (child nodes). Branch nodes are also referred to as parent nodes because they can contain child nodes. A leaf node is a node which cannot contain other nodes.
 
 ## 控件（Controls）
 
-JavaFX 控件是 在 JavaFX 应用程序中提供某种控制功能的 JavaFX 组件。 例如，按钮、单选按钮、表格、树等等。
+JavaFX 控件是在 JavaFX 应用程序中提供某种控制功能的 JavaFX 组件。例如，按钮、单选按钮、表格、树等等。
 
 JavaFX controls are JavaFX components which provide some kind of control functionality inside a JavaFX application. For instance, a button, radio button, table, tree etc.
 
@@ -129,7 +120,7 @@ Each of these controls will be explained in separate texts.
 
 ## 布局（Layouts）
 
-_JavaFX 布局_ 是包含其他组件的组件。 布局组件管理嵌套在其中的组件的布局。JavaFX 布局组件有时也称为父组件，因为它们包含子组件，还因为布局组件是 JavaFX 类 `javafx.scene.Parent` 的子类。
+_JavaFX 布局_ 是包含其他组件的组件。布局组件管理嵌套在其中的组件的布局。JavaFX 布局组件有时也称为父组件，因为它们包含子组件，还因为布局组件是 JavaFX 类 `javafx.scene.Parent` 的子类。
 
 _JavaFX layouts_ are components which contains other components inside them. The layout component manages the layout of the components nested inside it. JavaFX layout components are also sometimes called _parent components_ because they contain child components, and because layout components are subclasses of the JavaFX class `javafx.scene.Parent`.
 
@@ -160,7 +151,7 @@ Each of these layout components will be covered in separate texts.
 
 ### 嵌套布局
 
-可以将布局组件嵌套在其它布局组件中。 这对于实现特定布局很有用。 例如，要获得未在网格中布局、但实现多行都拥有不同的水平布局的组件，您可以在 VBox 组件内嵌套多个 HBox 布局组件。
+可以将布局组件嵌套在其它布局组件中。这对于实现特定布局很有用。例如，要获得未在网格中布局、但实现多行都拥有不同的水平布局的组件，您可以在 VBox 组件内嵌套多个 HBox 布局组件。
 
 It is possible to nest layout components inside other layout components. This can be useful to achieve a specific layout. For instance, to get horizontal rows of components which are not laid out in a grid, but differently for each row, you can nest multiple HBox layout components inside a VBox component.
 
@@ -197,13 +188,13 @@ JavaFX contains features that makes it easy to draw 3D graphics on the screen.
 
 ## 音频
 
-JavaFX 包含可以轻松在 JavaFX 应用程序中播放音频的功能。 这通常在游戏或教育应用中很有用。
+JavaFX 包含可以轻松在 JavaFX 应用程序中播放音频的功能。这通常在游戏或教育应用中很有用。
 
 JavaFX contains features that makes it easy to play audio in JavaFX applications. This is typically useful in games or educational applications.
 
 ## 视频
 
-JavaFX 包含可以轻松在 JavaFX 应用程序中播放视频的功能。 这通常在流媒体应用程序、游戏或教育应用程序中很有用。
+JavaFX 包含可以轻松在 JavaFX 应用程序中播放视频的功能。这通常在流媒体应用程序、游戏或教育应用程序中很有用。
 
 JavaFX contains features that makes it easy to play video in JavaFX applications. This is typically useful in streaming applications, games or educational applications.
 
