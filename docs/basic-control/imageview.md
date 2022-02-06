@@ -6,9 +6,9 @@
 
 :::
 
-JavaFX ImageView 控件可以在 JavaFX GUI 中显示图像。ImageView 控件必须添加到场景图中才能可见。JavaFX ImageView 控件由类 `javafx.scene.image.ImageView` 表示。
+JavaFX _图像视图_ 控件可以在 JavaFX GUI 中显示图像。ImageView 控件必须添加到场景图中才可见。JavaFX ImageView 控件由 `javafx.scene.image.ImageView` 类表示。
 
-The JavaFX ImageView control can display an image inside a JavaFX GUI. The ImageView control must be added to the scene graph to be visible. The JavaFX ImageView control is represented by the class `javafx.scene.image.ImageView`.
+The JavaFX _ImageView_ control can display an image inside a JavaFX GUI. The ImageView control must be added to the scene graph to be visible. The JavaFX ImageView control is represented by the class `javafx.scene.image.ImageView`.
 
 ## 创建一个 `ImageView`
 

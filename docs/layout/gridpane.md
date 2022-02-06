@@ -1,4 +1,4 @@
-# 网格窗格（GridPane）
+# GridPane（网格窗格）
 
 ::: details 目录
 

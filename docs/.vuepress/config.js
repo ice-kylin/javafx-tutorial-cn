@@ -218,7 +218,7 @@ module.exports = {
       },
       {
         text: "🏗️ 布局组件",
-        children: ["/layout/gridpane.md"],
+        children: ["/layout/pane.md", "/layout/gridpane.md"],
       },
       {
         text: "🪄 容器控件",

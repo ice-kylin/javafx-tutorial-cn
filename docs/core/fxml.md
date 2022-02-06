@@ -6,9 +6,9 @@
 
 :::
 
-_JavaFX FXML_ 是一种 XML 格式的文件，使您能够以类似于在 HTML 中编写 Web GUI 的方式编写 JavaFX GUI。_FXML_ 因此使您能够将 JavaFX 布局代码与应用程序代码的其余部分分开。这使得布局代码和应用程序代码的其余部分分隔开（解耦）。
+JavaFX _FXML_ 是一种 XML 格式的文件，使您能够以类似于在 HTML 中编写 Web GUI 的方式编写 JavaFX GUI。_FXML_ 因此使您能够将 JavaFX 布局代码与应用程序代码的其余部分分开。这使得布局代码和应用程序代码的其余部分分隔开（解耦）。
 
-_JavaFX FXML_ is an XML format that enables you to compose JavaFX GUIs in a fashion similar to how you compose web GUIs in HTML. _FXML_ thus enables you to separate your JavaFX layout code from the rest of your application code. This cleans up both the layout code and the rest of the application code.
+JavaFX _FXML_ is an XML format that enables you to compose JavaFX GUIs in a fashion similar to how you compose web GUIs in HTML. _FXML_ thus enables you to separate your JavaFX layout code from the rest of your application code. This cleans up both the layout code and the rest of the application code.
 
 FXML 既可用于构建整个应用程序 GUI 的布局，也可仅用于构建应用程序 GUI 的一部分，例如表单、选项卡、对话框等一部分的布局。
 
