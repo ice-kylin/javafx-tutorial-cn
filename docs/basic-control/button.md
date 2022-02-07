@@ -282,7 +282,7 @@ Here is a screenshot of two JavaFX buttons. The first button has the default siz
 In order to respond to the click of a button you need to attach an event listener to the `Button` object. Here is how that looks:
 
 :::: code-group
-::: code-group-item 匿名子类
+::: code-group-item 匿名实现类
 
 ```java
 button.setOnAction(new EventHandler() {

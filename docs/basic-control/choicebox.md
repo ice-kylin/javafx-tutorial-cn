@@ -1,8 +1,8 @@
-# ChoiceBox
+# ChoiceBox（选择框）
+
+JavaFX ChoiceBox 控件使用户能够从预定义的选项列表中选择一个选项。JavaFX ChoiceBox 控件由 `javafx.scene.control.ChoiceBox` 类表示。这个 JavaFX ChoiceBox 教程将解释如何使用 `ChoiceBox` 类。
 
 The JavaFX ChoiceBox control enables users to choose an option from a predefined list of choices. The JavaFX ChoiceBox control is represented by the class `javafx.scene.control.ChoiceBox` . This JavaFX ChoiceBox tutorial will explain how to use the `ChoiceBox` class.
-
-
 
 ## Creating a ChoiceBox
 
@@ -11,8 +11,6 @@ You create a `ChoiceBox` simply by creating a new instance of the `ChoiceBox` cl
 ```
 ChoiceBox choiceBox = new ChoiceBox();
 ```
-
-
 
 ## Adding Choices to a ChoiceBox
 
@@ -23,8 +21,6 @@ choiceBox.getItems().add("Choice 1");
 choiceBox.getItems().add("Choice 2");
 choiceBox.getItems().add("Choice 3");
 ```
-
-
 
 ## Adding a ChoiceBox to the Scene Graph
 
@@ -78,8 +74,6 @@ You can read the selected value of a `ChoiceBox` via its `getValue()` method. If
 ```
 String value = (String) choiceBox.getValue();
 ```
-
-
 
 ## Listening for Selection
 

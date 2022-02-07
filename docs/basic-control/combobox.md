@@ -1,8 +1,8 @@
-# ComboBox
+# ComboBox（组合框）
+
+JavaFX ComboBox 控件使用户能够从预定义的选项列表中选择一个选项，或者如果没有一个预定义的选项与用户想要选择的选项匹配，则可以键入另一个值。JavaFX ComboBox 控件由 `javafx.scene.control.ComboBox` 类表示。这个 JavaFX ComboBox 教程将解释如何使用 `ComboBox` 类。
 
 The JavaFX ComboBox control enables users to choose an option from a predefined list of choices, or type in another value if none of the predefined choices matches what the user want to select. The JavaFX ComboBox control is represented by the class `javafx.scene.control.ComboBox` . This JavaFX ComboBox tutorial will explain how to use the `ComboBox` class.
-
-
 
 ## Creating a ComboBox
 
@@ -11,8 +11,6 @@ You create a `ComboBox` simply by creating a new instance of the `ComboBox` clas
 ```
 ComboBox comboBox = new ComboBox();
 ```
-
-
 
 ## Adding Choices to a ComboBox
 
@@ -23,8 +21,6 @@ comboBox.getItems().add("Choice 1");
 comboBox.getItems().add("Choice 2");
 comboBox.getItems().add("Choice 3");
 ```
-
-
 
 ## Adding a ComboBox to the Scene Graph
 
@@ -93,8 +89,6 @@ You can read the selected value of a `ComboBox` via its `getValue()` method. If 
 ```
 String value = (String) comboBox.getValue();
 ```
-
-
 
 ## Listening for Selection
 
