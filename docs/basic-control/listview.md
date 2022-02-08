@@ -2,8 +2,6 @@
 
 The JavaFX ListView control enables users to choose one or more options from a predefined list of choices. The JavaFX ListView control is represented by the class `javafx.scene.control.ListView` . This JavaFX ListView tutorial will explain how to use the `ListView` class.
 
-
-
 ## Creating a ListView
 
 You create a `ListView` simply by creating a new instance of the `ListView` class. Here is a JavaFX `ListView` instantiation example:
@@ -11,8 +9,6 @@ You create a `ListView` simply by creating a new instance of the `ListView` clas
 ```
 ListView listView = new ListView();
 ```
-
-
 
 ## Adding Items to a ListView
 
@@ -23,8 +19,6 @@ listView.getItems().add("Item 1");
 listView.getItems().add("Item 2");
 listView.getItems().add("Item 3");
 ```
-
-
 
 ## Adding a ListView to the Scene Graph
 
@@ -75,8 +69,6 @@ The application resulting from running this example would look similar to this s
 Notice how the `ListView` shows multiple options by default. You can set a height and width for a `ListView`, but you cannot set explicitly how many items should be visible. The height determines that based on the height of each item displayed.
 
 If there are more items in the `ListView` than can fit into its visiible area, the `ListView` will add scroll bars so the user can scroll up and down over the items.
-
-
 
 ## Reading the Selected Value
 
@@ -143,8 +135,6 @@ public class ListViewExperiments extends Application  {
     }
 }
 ```
-
-
 
 ## Allowing Multiple Items to be Selected
 
