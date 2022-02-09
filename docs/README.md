@@ -7,7 +7,7 @@ actions:
   - text: 💎 开始阅读
     link: "/prepare/tutorial.md"
     type: primary
-  - text: 🍺 Github
+  - text: 🍨 Github
     link: "https://github.com/ice-kylin/javafx-tutorial-cn"
     type: secondary
 navbar: true

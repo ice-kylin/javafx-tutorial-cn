@@ -207,7 +207,7 @@ module.exports = {
         ],
       },
       {
-        text: "⚒️ 基础控件",
+        text: "🍃 基础控件",
         children: [
           "/basic-control/imageview.md",
           "/basic-control/text.md",
@@ -227,7 +227,7 @@ module.exports = {
         ],
       },
       {
-        text: "🏗️ 布局组件",
+        text: "🧩 布局组件",
         children: [
           "/layout/region.md",
           "/layout/pane.md",
@@ -245,7 +245,7 @@ module.exports = {
         children: [],
       },
       {
-        text: "🖼️ 图表",
+        text: "📊 图表",
         children: [],
       },
       {
@@ -261,7 +261,7 @@ module.exports = {
     repo: "https://github.com/ice-kylin/javafx-tutorial-cn",
     docsDir: "docs",
     docsBranch: "main",
-    repoLabel: "🍺 Github",
+    repoLabel: "🍨 Github",
     editLinks: true,
     editLinkText: "📝 编辑本文",
     notFound: ["👻 页面走丢了", "👻 这个页面不存在呢"],
