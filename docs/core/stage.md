@@ -192,7 +192,7 @@ The `Modality.WINDOW_MODAL` modality option means that the newly created `Stage`
 
 The `Modality.NONE` modality option means that this `Stage` will not block any other windows opened in this application.
 
-`Modality.APPLICATION_MODAL` 和 `Modality.WINDOW_MODAL` 窗口模式对于充当“向导”或“对话框”窗口的 `Stage` 对象很有用，，它们应该阻塞应用程序或窗口，直到用户完成向导或对话框的过程。`Modality.NONE` 窗口对于表示可以共存的窗口的 `Stage` 对象很有用，例如浏览器应用中的不同网页窗口。
+`Modality.APPLICATION_MODAL` 和 `Modality.WINDOW_MODAL` 窗口模式可用于充当“向导”或“对话框”窗口的 `Stage` 对象，它们应该阻塞应用程序或窗口，直到用户完成向导或对话框的过程。`Modality.NONE` 窗口可用于表示可以共存的窗口的 `Stage` 对象，例如浏览器应用中的不同网页窗口。
 
 The `Modality.APPLICATION_MODAL` and `Modality.WINDOW_MODAL` modality modes are useful for `Stage` objects representing windows that function as "wizards" or "dialogs" which should block the application or window until the wizard or dialog process is completed by the user. The `Modality.NONE` modality is useful for `Stage` objects representing windows that can co-exist, like different browser windows in a browser application.
 
