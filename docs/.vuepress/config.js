@@ -224,6 +224,8 @@ module.exports = {
           "/basic-control/listview.md",
           "/basic-control/textfield.md",
           "/basic-control/passwordfield.md",
+          "/basic-control/textarea.md",
+          "/basic-control/separator.md",
         ],
       },
       {
